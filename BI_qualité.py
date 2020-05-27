@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt #visualisation
 from sklearn import preprocessing 
 sns.set(color_codes=True)
  
-df= pd.read_excel('C:/Users/121/.spyder-py3/EDA projects/qualité_c1.xlsx')
+df= pd.read_excel('qualité_c1.xlsx')
 
 df['score'] = 1/2 * df['Courte duree'] + 1/6 * df['chev_temp'] + 1/6 * df['injoignable'] + 1/6 * df['conformité']
 
